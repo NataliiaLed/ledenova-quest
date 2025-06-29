@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import ledenova.model.QuestNode;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
@@ -25,7 +26,7 @@ public class QuestLoader {
                     mapper.getTypeFactory().constructCollectionType(List.class, QuestNode.class));
             return nodes.stream()
                     .collect(Collectors.toMap(QuestNode::getId, node -> node));
-        } catch (Exception ex) {
+        } catch (IOException e) {
             throw new RuntimeException("Failed to load quest " + resourcePath);
         }
     }
