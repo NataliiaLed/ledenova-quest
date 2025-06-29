@@ -5,6 +5,6 @@
 </head>
 <body>
     <h2>Oh no! ${node.text}</h2>
-    <a href="${pageContext.request.contextPath}/quests/${questId}?nodeId=start">Intentar otra vez</a>
+    <a href="${pageContext.request.contextPath}/quests/${questId}?nodeId=start">Try again</a>
 </body>
 </html>
