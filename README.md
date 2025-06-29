@@ -7,5 +7,5 @@
 
 ###
 Enter your name
-<img src="doc/imgages/login.png" alt="Login screen" width="300"/>
+<img src="doc/images/login.png" alt="Login screen" width="300"/>
 
