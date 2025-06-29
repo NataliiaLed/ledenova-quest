@@ -1,0 +1,252 @@
+- id: start
+  text: "Зима прийшла в Хогвартс, і Кіра, розумна та красива дівчинка-чарівниця, стоїть на краю чарівного лісу. Сніг мерехтить під місячним світлом. Кіт Ларик муркоче біля неї. Куди піде Кіра?"
+  type: QUESTION
+  decisionOptions:
+    - id: dec-1001
+      decision: "Увійти в ліс і дослідити снігові стежки"
+      questItemId: step1-1
+    - id: dec-1002
+      decision: "Залишитись біля Хогвартсу та почитати у бібліотеці"
+      questItemId: step1-2
+
+- id: step1-1
+  text: "Кіра заглиблюється в засніжений ліс. Раптом вона помічає сліди дивної істоти з крилами. Що робити?"
+  type: QUESTION
+  decisionOptions:
+    - id: dec-2001
+      decision: "Іти за слідами істоти"
+      questItemId: step2-1
+    - id: dec-2002
+      decision: "Ігнорувати сліди і продовжити прогулянку"
+      questItemId: step2-2
+
+- id: step1-2
+  text: "У бібліотеці Кіра знаходить старовинну книгу про крилатих єдинорогів. Ларик сидить на столі і уважно дивиться на неї. Що зробить Кіра?"
+  type: QUESTION
+  decisionOptions:
+    - id: dec-2101
+      decision: "Взяти книгу і піти до лісу шукати єдинорога"
+      questItemId: step2-3
+    - id: dec-2102
+      decision: "Залишитись у бібліотеці і читати далі"
+      questItemId: step2-4
+
+- id: step2-1
+  text: "Сліди приводять Кіру до ясної галявини, де спить єдиноріг з крилами. Ларик тихо підкрадається. Що робити?"
+  type: QUESTION
+  decisionOptions:
+    - id: dec-3001
+      decision: "Повільно підійти і спробувати приручити єдинорога"
+      questItemId: step3-1
+    - id: dec-3002
+      decision: "Нічого не чіпати і спостерігати здалеку"
+      questItemId: step3-2
+
+- id: step2-2
+  text: "Кіра прогулюється далі і зустрічає друзів з Хогвартса, які кличуть її на танці джайв та ча-ча-ча. Вона вибирає..."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-3101
+      decision: "Приєднатися до танців"
+      questItemId: step3-3
+    - id: dec-3102
+      decision: "Відмовитись і повернутись до лісу"
+      questItemId: step3-4
+
+- id: step2-3
+  text: "Книга в руках Кіри виблискує магією, а Ларик мяукає на знак згоди. Вона виходить з бібліотеки у ліс шукати єдинорога."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-3201
+      decision: "Слідувати за світлом, що веде вглиб лісу"
+      questItemId: step3-5
+    - id: dec-3202
+      decision: "Піти на галявину біля замерзлого озера"
+      questItemId: step3-6
+
+- id: step2-4
+  text: "Кіра заглиблюється в читання, дізнається багато про крилатих єдинорогів, але відчуває, що пригоди кличуть її назовні."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-3301
+      decision: "Закрити книгу і піти в ліс"
+      questItemId: step3-5
+    - id: dec-3302
+      decision: "Залишитись і перечитати ще більше"
+      questItemId: step3-7
+
+- id: step3-1
+  text: "Єдиноріг прокидається і спокійно дивиться на Кіру. Він не боїться. Ларик обережно підходить і торкається його носа. Що робити далі?"
+  type: QUESTION
+  decisionOptions:
+    - id: dec-4001
+      decision: "Погладити єдинорога і запропонувати йому дружбу"
+      questItemId: step4-1
+    - id: dec-4002
+      decision: "Залишити його і піти, боячись потривожити"
+      questItemId: step4-2
+
+- id: step3-2
+  text: "Кіра спостерігає здалеку, але раптом з'являються злі чаклуни, які хочуть забрати єдинорога. Їй треба діяти швидко!"
+  type: QUESTION
+  decisionOptions:
+    - id: dec-4101
+      decision: "Зачарувати злодіїв і відвести їх подалі"
+      questItemId: step4-3
+    - id: dec-4102
+      decision: "Попросити допомоги у Ларика"
+      questItemId: step4-4
+
+- id: step3-3
+  text: "Танці піднімають настрій Кіри, і вона відчуває нову силу і радість. Після танців вона йде в ліс, де..."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-4201
+      decision: "Зустріти єдинорога"
+      questItemId: step4-1
+    - id: dec-4202
+      decision: "Побачити сліди злодіїв"
+      questItemId: step4-5
+
+- id: step3-4
+  text: "Кіра повертається до лісу і помічає, що хтось слідкує за нею. Це злодії, які хочуть єдинорога. Вона готується захищатись."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-4301
+      decision: "Викликати заклинання захисту"
+      questItemId: step4-6
+    - id: dec-4302
+      decision: "Втекти і спробувати знайти єдинорога пізніше"
+      questItemId: step4-7
+
+- id: step3-5
+  text: "Світло веде Кіру до великої засніженої галявини, де вона бачить єдинорога. Він красивий і величний."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-4401
+      decision: "Підійти і заговорити з ним"
+      questItemId: step4-1
+    - id: dec-4402
+      decision: "Покликати Ларика допомогти"
+      questItemId: step4-4
+
+- id: step3-6
+  text: "Біля озера Кіра знаходить сліди єдинорога і відчуває магічну ауру. Ларик починає тихо муркотіти."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-4501
+      decision: "Іти за слідами в глиб лісу"
+      questItemId: step4-1
+    - id: dec-4502
+      decision: "Почекати і спостерігати"
+      questItemId: step4-8
+
+- id: step3-7
+  text: "Читання захоплює Кіру, вона дізнається секрети дружби з єдинорогом. Але час настав діяти!"
+  type: QUESTION
+  decisionOptions:
+    - id: dec-4601
+      decision: "Взяти Ларика і піти шукати єдинорога"
+      questItemId: step4-1
+    - id: dec-4602
+      decision: "Залишитись і подумати ще"
+      questItemId: step4-9
+
+- id: step4-1
+  text: "Кіра подружилася з єдинорогом, і він дозволяє їй торкнутися своїх крил. Ларик весело грається поруч."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-5001
+      decision: "Навчити єдинорога літати разом"
+      questItemId: step5-1
+    - id: dec-5002
+      decision: "Прихистити єдинорога в лісі і охороняти"
+      questItemId: step5-2
+
+- id: step4-2
+  text: "Кіра вирішила не турбувати єдинорога, але злодії все ж знайшли його. Вони забрали його з собою."
+  type: LOOSE
+  decisionOptions: []
+
+- id: step4-3
+  text: "Заклинання Кіри відвело злодіїв далеко від лісу, і єдиноріг залишився в безпеці."
+  type: WIN
+  decisionOptions: []
+
+- id: step4-4
+  text: "Ларик несподівано показав магічну силу і відлякав злодіїв. Кіра врятувала єдинорога."
+  type: WIN
+  decisionOptions: []
+
+- id: step4-5
+  text: "Кіра бачить сліди злодіїв, які крадуться до єдинорога. Вона повинна швидко діяти."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-5201
+      decision: "Піти на допомогу єдинорогу"
+      questItemId: step5-3
+    - id: dec-5202
+      decision: "Попередити викладачів Хогвартса"
+      questItemId: step5-4
+
+- id: step4-6
+  text: "Заклинання захисту створює бар'єр, що зупиняє злодіїв. Кіра рятує єдинорога."
+  type: WIN
+  decisionOptions: []
+
+- id: step4-7
+  text: "Кіра втікає, але злодії забирають єдинорога. Вона засмучена, але знає, що ще буде шанс."
+  type: LOOSE
+  decisionOptions: []
+
+- id: step4-8
+  text: "Кіра бачить, що єдиноріг підходить сам. Вона тихо кличе Ларика."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-5801
+      decision: "Погладити єдинорога"
+      questItemId: step5-1
+    - id: dec-5802
+      decision: "Не рухатися і чекати"
+      questItemId: step5-5
+
+- id: step4-9
+  text: "Кіра сумнівається, але Ларик підказує їй діяти. Вони йдуть до лісу разом."
+  type: QUESTION
+  decisionOptions:
+    - id: dec-5901
+      decision: "Шукати єдинорога"
+      questItemId: step5-1
+    - id: dec-5902
+      decision: "Піти додому і спланувати наступні кроки"
+      questItemId: step5-6
+
+- id: step5-1
+  text: "Кіра і єдиноріг здіймаються в небо. Ларик радіє і стрибає по снігу. Вони щасливі разом."
+  type: WIN
+  decisionOptions: []
+
+- id: step5-2
+  text: "Кіра захищає єдинорога, і він залишається в лісі під її охороною. Злодії більше не повертаються."
+  type: WIN
+  decisionOptions: []
+
+- id: step5-3
+  text: "Кіра намагається врятувати єдинорога, але злодії її перехитрили. Вона обіцяє повернутися."
+  type: LOOSE
+  decisionOptions: []
+
+- id: step5-4
+  text: "Викладачі Хогвартса прибувають і допомагають Кірі вигнати злодіїв. Єдиноріг врятований."
+  type: WIN
+  decisionOptions: []
+
+- id: step5-5
+  text: "Єдиноріг підходить, і Кіра ніжно гладить його. Вони стають друзями назавжди."
+  type: WIN
+  decisionOptions: []
+
+- id: step5-6
+  text: "Кіра повертається додому, щоб відпочити, знаючи, що наступного дня почнуться нові пригоди."
+  type: WIN
+  decisionOptions: []
